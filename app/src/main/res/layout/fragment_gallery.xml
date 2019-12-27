@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Gallery">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/aboutcompany"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="10dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="-2dp"
+            app:cardCornerRadius="15dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/logo"
+                    android:layout_width="152dp"
+                    android:layout_height="128dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:padding="5dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/logo">
+
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/cwebsite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_margin="10dp"
+
+                    android:layout_toRightOf="@id/logo"
+
+                    android:background="@drawable/btnbg"
+
+                    android:gravity="center"
+                    android:padding="10dp"
+
+                    android:text="Our Website"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:textStyle="bold">
+
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/abc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/cwebsite"
+                    android:layout_margin="5dp"
+                    android:layout_toRightOf="@id/logo"
+                    android:background="@drawable/btnbg"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="About company"
+                    android:textColor="#000000"
+                    android:textSize="23sp">
+
+                </TextView>
+
+                <LinearLayout
+                    android:id="@+id/linearsocial"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_below="@id/logo"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/cfb"
+                        android:layout_width="100dp"
+                        android:layout_height="65dp"
+                        android:layout_margin="5dp"
+                        android:background="#ffff"
+                        android:src="@drawable/facebook">
+
+                    </ImageButton>
+
+                    <ImageButton
+                        android:id="@+id/cinsta"
+                        android:layout_width="100dp"
+                        android:layout_height="65dp"
+                        android:layout_margin="5dp"
+                        android:background="#ffff"
+                        android:src="@drawable/instagram">
+
+                    </ImageButton>
+
+                    <ImageButton
+                        android:id="@+id/cyt"
+                        android:layout_width="100dp"
+                        android:layout_height="65dp"
+                        android:layout_margin="5dp"
+                        android:background="#ffff"
+                        android:src="@drawable/youtube">
+
+                    </ImageButton>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/aboutcompany"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="-2dp"
+            app:cardCornerRadius="15dp">
+
+
+        </androidx.cardview.widget.CardView>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/aboutdev"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+        </RelativeLayout>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/foundedby"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/aboutcompany"
+            android:layout_margin="5dp"
+
+            app:cardCornerRadius="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:padding="5dp"
+                android:text="Founder: Prashanth Vadla"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold">
+
+            </TextView>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="406dp"
+            android:layout_height="227dp"
+
+            android:layout_below="@id/foundedby"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            app:cardCornerRadius="15dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="227dp"
+                android:layout_margin="5dp">
+
+                <TextView
+                    android:id="@+id/abd"
+                    android:layout_width="300dp"
+                    android:layout_height="78dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="27dp"
+                    android:layout_marginEnd="27dp"
+                    android:gravity="center"
+                    android:lineHeight="25sp"
+                    android:text="App Designed and Developed by K.jagadeesh Kumar"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold">
+
+
+                </TextView>
+
+
+                <LinearLayout
+                    android:id="@+id/lineardev"
+                    android:layout_width="343dp"
+                    android:layout_height="71dp"
+                    android:layout_below="@id/abd"
+
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="9dp"
+                    android:layout_marginEnd="14dp"
+                    android:layout_marginBottom="18dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/dlinked"
+                        android:layout_width="100dp"
+                        android:layout_height="65dp"
+                        android:layout_margin="5dp"
+                        android:background="#ffff"
+                        android:src="@drawable/linkedin">
+
+                    </ImageButton>
+
+                    <ImageButton
+                        android:id="@+id/dinsta"
+                        android:layout_width="100dp"
+                        android:layout_height="65dp"
+                        android:layout_margin="5dp"
+                        android:background="#ffff"
+                        android:src="@drawable/instagram">
+
+                    </ImageButton>
+
+                    <ImageButton
+
+                        android:id="@+id/dgmail"
+                        android:layout_width="100dp"
+                        android:layout_height="65dp"
+                        android:background="#ffff"
+                        android:src="@drawable/gmail">
+
+                    </ImageButton>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
+</ScrollView>

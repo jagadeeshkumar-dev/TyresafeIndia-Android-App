@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Booknow">
+
+     <TextView
+        android:id="@+id/finaltitle"
+        android:layout_width="261dp"
+        android:layout_height="41dp"
+        android:text="TextView"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.122"
+        />
+
+    <EditText
+
+        android:id="@+id/Name"
+        android:layout_width="260dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="28dp"
+        android:maxLength="25"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Name"
+
+        android:focusable="true"
+        android:clickable="true"
+        android:focusableInTouchMode="true"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.464"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/finaltitle" />
+
+    <EditText
+
+        android:id="@+id/contact"
+        android:layout_width="259dp"
+        android:layout_height="44dp"
+        android:ems="10"
+        android:maxLength="10"
+        android:inputType="number"
+        android:hint="Phone no"
+
+        android:focusable="true"
+        android:clickable="true"
+        android:focusableInTouchMode="true"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.467"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Name"
+        app:layout_constraintVertical_bias="0.087" />
+
+    <Button
+        android:id="@+id/Submit"
+        android:layout_width="145dp"
+        android:layout_height="49dp"
+        android:background="@drawable/btnbg"
+        android:text="Submit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.437"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contact"
+        app:layout_constraintVertical_bias="0.135">
+
+
+    </Button>
+
+
+    <TextView
+        android:id="@+id/datetime"
+        android:layout_width="152dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="36dp"
+        android:text="dateandtime"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.772"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
